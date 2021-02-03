@@ -1,0 +1,331 @@
+@font-face {
+  font-family: "Gilroy";
+  src:
+    url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Gilroy";
+  src:
+    url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+  --special-yellow: #F7E296;
+  --special-yellow-dark: #F0C52E;
+  --basic-grey-light: #E5E5E5;
+  --brighter-special-yellow-dark: #FFC600;
+  --special-green: #91C92F;
+  --footer: #363636;
+  --basic-grey: #D9D9D9;
+}
+
+/*Global*/
+
+body {
+  min-width: 1160px;
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  color: var(--basic-black);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.nav-wrapper {
+  width: 1160px;
+  height: 344px;
+  background-color: var(--special-yellow);
+}
+
+
+.nav1 {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--basic-black);
+}
+
+
+.nav2,
+.button {
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+
+a {
+  color: var(--basic-black);
+}
+
+
+input[type="search"] {
+  border: none;
+  background: none;
+  font-weight: 300;
+}
+
+
+input::placeholder {
+  font-weight: 300;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+input:hover::placeholder {
+  font-weight: 300;
+  color: var(--basic-black);
+  opacity: 0.6;
+}
+
+
+.logo:hover,
+.nav-item1:hover,
+.nav-item2:hover,
+.social-item:hover,
+.breadcrumb:hover,
+.sort-item:hover,
+.pagination-item:hover,
+.nav-item1.logout:hover {
+  opacity: 0.6;
+}
+
+
+.logo:active,
+.nav-item1:active,
+.nav-item2:active,
+.social-item:active,
+.item1:active,
+.button:active,
+.pagination-item,
+.control:active,
+.nav-item1.logout,
+.nav-item1.logout:active {
+  opacity: 0.3;
+}
+
+
+.button {
+  background: linear-gradient(transparent 40%, #F0C52E 40%, #F0C52E 60%, transparent 60%);
+}
+
+
+.button:hover {
+  background: var(--special-yellow-dark);
+}
+
+
+li .button:active {
+  background: var(--basic-black);
+  color: var(--special-yellow);
+}
+
+
+ul {
+  list-style: none;
+}
+
+
+.services {
+  background: var(--basic-grey-light);
+}
+
+
+footer {
+  background: var(--footer);
+}
+
+
+.nav-item1.footer,
+.nav-item2.footer,
+.adress,
+.phone {
+  color: var(--basic-white);
+}
+
+
+.nav1.footer {
+  opacity: 0.7;
+}
+
+
+.features {
+  font-weight: 300;
+}
+
+
+.feature-value {
+  font-size: 36px;
+}
+
+
+h1,
+h2,
+h3 {
+  font-size: 47px;
+  line-height: 58px;
+}
+
+
+.desc,
+.adress,
+.phone {
+  font-size: 15px;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+
+.slider {
+  line-height: 20px;
+}
+
+
+.info {
+  line-height: 30px;
+}
+
+
+.about,
+.delivery,
+.contacts {
+  line-height: 28px;
+}
+
+
+.nav2.footer,
+.socials {
+  text-align: center;
+}
+
+
+/* Catalog */
+
+.nav-wrapper.catalog {
+  height: 186px;
+}
+
+
+.select {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+
+.item {
+  font: inherit;
+  letter-spacing: 0.05em;
+}
+
+
+.price {
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+}
+
+
+.sort-item,
+.breadcrumb {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  background: none;
+  border: none;
+  opacity: 0.3;
+}
+
+
+.breadcrumb:active {
+  opacity: 0.1;
+}
+
+
+
+.breadcrumb:hover,
+.sort-item:active,
+.sort-item.current,
+.pagination-item.current,
+.pagination-item:active {
+  opacity: 1;
+}
+
+
+.item-selection {
+  background: var(--basic-grey-light);
+}
+
+
+label {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 38px;
+}
+
+
+.pagination {
+  background: var(--basic-grey-light);
+  font-size: 16px;
+line-height: 20px;
+}
+
+
+.control {
+	font: inherit;
+	width: 120px;
+	height: 70px;
+	letter-spacing: 0.1em;
+}
+
+
+.control:hover {
+	background: var(--basic-grey);
+}
