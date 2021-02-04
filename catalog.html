@@ -5,7 +5,7 @@
   <title>HTML Academy: Девайс(каталог)</title>
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -16,26 +16,28 @@
       <form action="https://echo.htmlacademy.ru" method="post">
         <input type="search" placeholder="Поиск по сайту">
       </form>
-      <section class="nav1">
-        <a class="nav-item1" href="#">Валентин Петухов</a>
-        <a class="nav-item1 logout" href="#">Выйти</a>
-        <a class="nav-item1" href="#">Сравнить</a>
-        <a class="nav-item1" href="#">Корзина</a>
+      <section class="nav-user">
+        <a class="user-item" href="#">Валентин Петухов</a>
+        <a class="user-item logout" href="#">Выйти</a>
+        <a class="user-item" href="#">Сравнить</a>
+        <a class="user-item" href="#">Корзина</a>
       </section>
-      <section class="nav2">
-        <a class="nav-item2" href="catalog.html">Каталог товаров</a>
-        <a class="nav-item2" href="#">Доставка</a>
-        <a class="nav-item2" href="#">Гарантия</a>
-        <a class="nav-item2" href="#">Контакты</a>
+      <section class="nav-main">
+        <a class="nav-main-item" href="catalog.html">Каталог товаров</a>
+        <a class="nav-main-item" href="#">Доставка</a>
+        <a class="nav-main-item" href="#">Гарантия</a>
+        <a class="nav-main-item" href="#">Контакты</a>
       </section>
     </nav>
   </header>
   <main>
     <h1>Моноподы для селфи</h1>
     <nav class="breadcrumbs">
-        <a class="breadcrumb" href="#">Главная</a>
-        <a class="breadcrumb" href="catalog.html">Каталог товаров</a>
-        <a class="breadcrumb" href="#">Моноподы для селфи</a>
+      <ul>
+        <li><a class="breadcrumb" href="#">Главная</a></li>
+        <li><a class="breadcrumb" href="catalog.html">Каталог товаров</a></li>
+        <li><a class="breadcrumb" href="#">Моноподы для селфи</a></li>
+      </ul>
     </nav>
     <section class="item-selection">
       <form method="get" action="https://echo.htmlacademy.ru">
@@ -82,7 +84,7 @@
             </li>
           </ul>
         </fieldset>
-        <a class="button">Показать</a>
+        <button type="submit" class="button">Показать</button>
     </section>
     </form>
     <section class="item-selection">
@@ -130,7 +132,7 @@
             <h3 class="item">Селфи-палка «Следуй за мной»</h3>
           </a>
           <p class="price">1900 руб.</p>
-        </li>
+          </li>
       </ul>
       <ul class="pagination">
         <li><a class="control" href="#">НАЗАД</a></li>
@@ -145,18 +147,18 @@
     <a class="logo" href="index.html">
       <img src="img/device_footer.svg" width="163" height="35" alt="Девайс">
     </a>
-    <section class="nav1 footer">
-        <a class="nav-item1 footer" href="#">Валентин Петухов</a>
-        <a class="nav-item1 footer" href="#">Выйти</a>
-        <a class="nav-item1 footer" href="#">Сравнить</a>
-        <a class="nav-item1 footer" href="#">Корзина</a>
+    <section class="nav-user footer">
+      <a class="user-item ftr" href="#">Валентин Петухов</a>
+      <a class="user-item ftr" href="#">Выйти</a>
+      <a class="user-item ftr" href="#">Сравнить</a>
+      <a class="user-item ftr" href="#">Корзина</a>
     </section>
     <p class="adress">г. Москва, ул. Строителей, 15</p>
     <a class="phone" href="tel: +74954959595">Тел.: +7 (495) 495-95-95</a>
-    <section class="nav2 footer">
-        <a class="nav-item2 footer" href="#">Доставка</a>
-        <a class="nav-item2 footer" href="#">Гарантия</a>
-        <a class="nav-item2 footer" href="#">Контакты</a>
+    <section class="nav-main footer">
+      <a class="nav-main-item ftr" href="#">Доставка</a>
+      <a class="nav-main-item ftr" href="#">Гарантия</a>
+      <a class="nav-main-item ftr" href="#">Контакты</a>
     </section>
     <section class="socials">
       <ul>
@@ -172,7 +174,8 @@
       </ul>
     </section>
     <a class="logo" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Академия">
-          </a>
+      <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Академия">
+    </a>
   </footer>
 </body>
+</html>
