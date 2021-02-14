@@ -10,26 +10,30 @@
 <body>
   <header>
     <nav class="nav-header-bar">
-      <nav class="nav-wrapper catalog">
+      <div class="nav-wrapper">
         <a class="logo" href="index.html">
           <img src="img/device_header.svg" width="163" height="35" alt="Девайс">
         </a>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <input type="search" placeholder="Поиск по сайту">
-        </form>
+        <div class="search">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <input type="search" placeholder="Поиск по сайту">
+          </form>
+        </div>
         <section class="nav-user">
           <a class="user-item" href="#">Валентин Петухов</a>
           <a class="user-item logout" href="#">Выйти</a>
           <a class="user-item" href="#">Сравнить</a>
           <a class="user-item" href="#">Корзина</a>
         </section>
+        <div class="catalog">
+          <a href="catalog.html">Каталог товаров</a>
+        </div>
         <section class="nav-main">
-          <a class="nav-main-item" href="catalog.html">Каталог товаров</a>
           <a class="nav-main-item" href="#">Доставка</a>
           <a class="nav-main-item" href="#">Гарантия</a>
           <a class="nav-main-item" href="#">Контакты</a>
         </section>
-      </nav>
+      </div>
     </nav>
   </header>
   <main class="container-catalog">
@@ -40,7 +44,7 @@
       <li><a class="breadcrumb" href="#">Моноподы для селфи</a></li>
     </ul>
     <section class="catalog-page">
-      <header class="catalog-page__wrapper">
+      <header class="catalog-page-wrapper">
         <h2 class="filter">ФИЛЬТР:</h2>
         <div class="item-sort">
           <h2 class="sorting-title">СОРТИРОВКА:</h2>
@@ -58,8 +62,8 @@
         </div>
       </header>
       <div class="catalog-body">
-        <div class="catalog-page__wrapper">
-          <aside class="catalog-body__filter">
+        <div class="catalog-page-wrapper">
+          <aside class="catalog-body-filter">
             <form method="get" action="https://echo.htmlacademy.ru">
               <fieldset>
                 <legend>Стоимость</legend>
@@ -106,7 +110,7 @@
               <button type="submit" class="button">Показать</button>
             </form>
           </aside>
-          <section class="catalog__list">
+          <section class="catalog-list">
             <ul class="items">
               <li>
                 <img src="img/item1.jpg" width="360" height="380" alt="Любительская селфи-палка">
@@ -152,38 +156,44 @@
     </section>
   </main>
   <footer>
-    <a class="logo footer" href="index.html">
-      <img src="img/device_footer.svg" width="163" height="35" alt="Девайс">
-    </a>
-    <section class="nav-user footer">
-      <a class="user-item ftr" href="#">Валентин Петухов</a>
-      <a class="user-item ftr" href="#">Выйти</a>
-      <a class="user-item ftr" href="#">Сравнить</a>
-      <a class="user-item ftr" href="#">Корзина</a>
-    </section>
-    <p class="adress">г. Москва, ул. Строителей, 15</p>
-    <a class="phone" href="tel: +74954959595">Тел.: +7 (495) 495-95-95</a>
-    <section class="nav-main footer">
-      <a class="nav-main-item ftr" href="#">Доставка</a>
-      <a class="nav-main-item ftr" href="#">Гарантия</a>
-      <a class="nav-main-item ftr" href="#">Контакты</a>
-    </section>
-    <section class="socials">
-      <ul>
-        <li>
-          <a class="social-item" href="#"><img src="img/facebook.svg" width="32" height="32" alt="Фэйсбук"></a>
-        </li>
-        <li>
-          <a class="social-item" href="#"><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a>
-        </li>
-        <li>
-          <a class="social-item" href="#"><img src="img/twitter.svg" width="32" height="32" alt="Твиттер"></a>
-        </li>
-      </ul>
-    </section>
-    <a class="logo copyright" href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Академия">
-    </a>
+    <div class="footer-nav">
+      <a class="logo footer" href="index.html">
+        <img src="img/device_footer.svg" width="163" height="35" alt="Девайс">
+      </a>
+      <section class="nav-user footer">
+        <a class="user-item ftr" href="#">Валентин Петухов</a>
+        <a class="user-item ftr" href="#">Выйти</a>
+        <a class="user-item ftr" href="#">Сравнить</a>
+        <a class="user-item ftr" href="#">Корзина</a>
+      </section>
+    </div>
+    <div class="cont-info">
+      <p class="adress">г. Москва, ул. Строителей, 15</p>
+      <a class="phone" href="tel: +74954959595">Тел.: +7 (495) 495-95-95</a>
+      <section class="nav-main footer">
+        <a class="nav-main-item ftr" href="#">Доставка</a>
+        <a class="nav-main-item ftr" href="#">Гарантия</a>
+        <a class="nav-main-item ftr" href="#">Контакты</a>
+      </section>
+    </div>
+    <div class="links">
+      <section>
+        <ul class="socials">
+          <li>
+            <a class="social-item" href="#"><img src="img/facebook.svg" width="32" height="32" alt="Фэйсбук"></a>
+          </li>
+          <li>
+            <a class="social-item" href="#"><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a>
+          </li>
+          <li>
+            <a class="social-item" href="#"><img src="img/twitter.svg" width="32" height="32" alt="Твиттер"></a>
+          </li>
+        </ul>
+      </section>
+      <a class="logo-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Академия">
+      </a>
+    </div>
   </footer>
 </body>
 </html>
