@@ -20,7 +20,7 @@
           </form>
         </div>
         <section class="nav-user">
-          <a class="user-item" href="#">Валентин Петухов</a>
+          <a class="user-item log" href="#">Валентин Петухов</a>
           <a class="user-item logout" href="#">Выйти</a>
           <a class="user-item" href="#">Сравнить</a>
           <a class="user-item" href="#">Корзина</a>
@@ -36,14 +36,14 @@
       </div>
     </nav>
   </header>
-  <main class="container-catalog">
-    <h1 class="catalog-heading">Моноподы для селфи</h1>
-    <ul class="breadcrumbs">
+  <main>
+    <h1 class="catalog-heading container-catalog">Моноподы для селфи</h1>
+    <ul class="breadcrumbs container-catalog">
       <li><a class="breadcrumb" href="#">Главная</a></li>
       <li><a class="breadcrumb" href="catalog.html">Каталог товаров</a></li>
       <li><a class="breadcrumb" href="#">Моноподы для селфи</a></li>
     </ul>
-    <section class="catalog-page">
+    <section class="catalog-page container-catalog">
       <header class="catalog-page-wrapper">
         <h2 class="filter">ФИЛЬТР:</h2>
         <div class="item-sort">
@@ -67,7 +67,25 @@
             <form method="get" action="https://echo.htmlacademy.ru">
               <fieldset>
                 <legend>Стоимость</legend>
-                <input type="range" name="price">
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar" style="
+                width: 30%;
+                margin-left: 20%"></div>
+                    </div>
+                    <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
+                    <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      от <input type="number" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">
+                      до <input type="number" name="max-price" value="5000">
+                    </label>
+                  </div>
+                </div>
               </fieldset>
               <fieldset>
                 <legend>Цвет</legend>
@@ -157,7 +175,7 @@
   </main>
   <footer>
     <div class="footer-nav">
-      <a class="logo footer" href="index.html">
+      <a class="logo-footer" href="index.html">
         <img src="img/device_footer.svg" width="163" height="35" alt="Девайс">
       </a>
       <section class="nav-user footer">
