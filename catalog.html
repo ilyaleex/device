@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <nav class="nav-header-bar">
+    <nav class="nav-header-bar item-page">
       <div class="nav-wrapper">
         <a class="logo" href="index.html">
           <img src="img/device_header.svg" width="163" height="35" alt="Девайс">
@@ -25,8 +25,8 @@
           <a class="user-item" href="#">Сравнить</a>
           <a class="user-item" href="#">Корзина</a>
         </section>
-        <div class="catalog">
-          <a href="catalog.html">Каталог товаров</a>
+        <div class="catalog-wrapper">
+          <a class="catalog" href="catalog.html">Каталог товаров</a>
         </div>
         <section class="nav-main">
           <a class="nav-main-item" href="#">Доставка</a>
@@ -39,33 +39,37 @@
   <main>
     <h1 class="catalog-heading container-catalog">Моноподы для селфи</h1>
     <ul class="breadcrumbs container-catalog">
-      <li><a class="breadcrumb" href="#">Главная</a></li>
-      <li><a class="breadcrumb" href="catalog.html">Каталог товаров</a></li>
-      <li><a class="breadcrumb" href="#">Моноподы для селфи</a></li>
+      <li class="breadcrumb"><a href="#">Главная</a></li>
+      <li class="breadcrumb"><a href="catalog.html">Каталог товаров</a></li>
+      <li class="breadcrumb current"><a href="#">Моноподы для селфи</a></li>
     </ul>
-    <section class="catalog-page container-catalog">
-      <header class="catalog-page-wrapper">
-        <h2 class="filter">ФИЛЬТР:</h2>
+    <section class="catalog-page">
+      <header class="catalog-page-wrapper container-catalog">
+        <h2 class="filter-title">ФИЛЬТР:</h2>
         <div class="item-sort">
           <h2 class="sorting-title">СОРТИРОВКА:</h2>
           <ul class="sort">
             <li>
-              <a class="sort-item current">По цене</a>
+              <a class="sort-item current" href="#">По цене</a>
             </li>
             <li>
-              <a class="sort-item">По типу</a>
+              <a class="sort-item" href="#">По типу</a>
             </li>
             <li>
-              <a class="sort-item">По популярности</a>
+              <a class="sort-item" href="#">По популярности</a>
             </li>
           </ul>
+          <ul class="triangle-controls">
+          <li><a href="#" class="up-triangle"></a></li>
+          <li><a href="#" class="down-triangle"></a></li>
+        </ul>
         </div>
       </header>
       <div class="catalog-body">
         <div class="catalog-page-wrapper">
           <aside class="catalog-body-filter">
             <form method="get" action="https://echo.htmlacademy.ru">
-              <fieldset>
+              <fieldset class="filter-item-heading">
                 <legend>Стоимость</legend>
                 <div class="range-filter">
                   <div class="range-controls">
@@ -88,39 +92,39 @@
                 </div>
               </fieldset>
               <fieldset>
-                <legend>Цвет</legend>
+                <legend class="filter-item-heading">Цвет</legend>
                 <ul>
-                  <li>
-                    <input type="checkbox" name="black" id="filter-black" checked>
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden" type="checkbox" name="black" id="filter-black" checked>
                     <label for="filter-black">Чёрный</label>
                   </li>
-                  <li>
-                    <input type="checkbox" name="white" id="filter-white">
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden" type="checkbox" name="white" id="filter-white">
                     <label for="filter-white">Белый</label>
                   </li>
-                  <li>
-                    <input type="checkbox" name="blue" id="filter-blue" checked>
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden" type="checkbox" name="blue" id="filter-blue" checked>
                     <label for="filter-blue">Синий</label>
                   </li>
-                  <li>
-                    <input type="checkbox" name="red" id="filter-red" checked>
-                    <label for="filter-pink">Красный</label>
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden" type="checkbox" name="red" id="filter-red" checked>
+                    <label for="filter-red">Красный</label>
                   </li>
-                  <li>
-                    <input type="checkbox" name="pink" id="filter-pink">
+                  <li class="filter-option filter-checkbox">
+                    <input class="visually-hidden" type="checkbox" name="pink" id="filter-pink">
                     <label for="filter-pink">Розовый</label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset>
-                <legend>Bluetooth</legend>
+                <legend class="filter-item-heading">Bluetooth</legend>
                 <ul>
-                  <li>
-                    <input type="radio" name="bluetooth" id="have-bt" checked>
+                  <li class="filter-option filter-radio">
+                    <input class="visually-hidden" type="radio" name="bluetooth" id="have-bt" checked>
                     <label for="have-bt">Есть</label>
                   </li>
-                  <li>
-                    <input type="radio" name="bluetooth" id="none-bt">
+                  <li class="filter-option filter-radio">
+                    <input class="visually-hidden" type="radio" name="bluetooth" id="none-bt">
                     <label for="none-bt">Нет</label>
                   </li>
                 </ul>
@@ -153,7 +157,7 @@
                 </a>
                 <p class="price">1500 руб.</p>
               </li>
-              <li">
+              <li>
                 <img src="img/item4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
                 <a href="#">
                   <h3 class="item">Селфи-палка «Следуй за мной»</h3>
@@ -161,6 +165,7 @@
                 <p class="price">1900 руб.</p>
                 </li>
             </ul>
+            <div class="pagination-wrapper">
             <ul class="pagination">
               <li><a class="control" href="#">НАЗАД</a></li>
               <li><a class="pagination-item current" href="#">1</a></li>
@@ -169,6 +174,7 @@
               <li><a class="control" href="#">ВПЕРЕД</a></li>
             </ul>
           </section>
+        </div>
         </div>
       </div>
     </section>
