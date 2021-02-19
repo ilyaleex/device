@@ -532,6 +532,7 @@ label {
   background: var(--basic-grey-light);
   font-size: 16px;
   line-height: 20px;
+  justify-content: space-between;
 }
 
 
@@ -553,6 +554,7 @@ label {
 
 .control {
   box-sizing: border-box;
+  display: block;
   padding: 25px 30px;
   font: inherit;
   letter-spacing: 0.1em;
