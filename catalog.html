@@ -11,34 +11,31 @@
   <header>
     <nav class="nav-header-bar item-page">
       <div class="nav-wrapper">
-        <a class="logo" href="index.html">
-          <img src="img/device_header.svg" width="163" height="35" alt="Девайс">
-        </a>
-        <section class="nav-first-row">
-          <ul class="nav-user">
-            <li class="search">
-              <form action="https://echo.htmlacademy.ru" method="post">
-                <input type="search" placeholder="Поиск по сайту">
-              </form>
-            </li>
-            <li>
-              <a class="user-item user" href="#">Валентин Петухов</a>
-              <a class="user-item logout" href="#">Выйти</a>
-              <a class="user-item compare" href="#">Сравнить</a>
-              <a class="user-item cart" href="#">Корзина</a>
-            </li>
-          </ul>
-        </section>
-        <section class="nav-second-row">
-          <ul class="nav-main">
-            <li><a class="catalog" href="catalog.html">Каталог товаров</a></li>
-            <li>
-              <a class="nav-main-item" href="#">Доставка</a>
-              <a class="nav-main-item" href="#">Гарантия</a>
-              <a class="nav-main-item" href="#">Контакты</a>
-            </li>
-          </ul>
-        </section>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/device_header.svg" width="163" height="35" alt="Девайс">
+          </a>
+        </div>
+        <ul class="nav-user">
+          <li class="search">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <input type="search" placeholder="Поиск по сайту">
+              <button сlass="search-button" type="submit">НАЙТИ</button>
+            </form>
+          </li>
+          <li>
+            <a class="user-item user" href="#">Валентин Петухов</a>
+            <a class="user-item logout" href="#">Выйти</a>
+          </li>
+          <li><a class="user-item compare" href="#">Сравнить</a></li>
+          <li><a class="user-item cart" href="#">Корзина</a></li>
+        </ul>
+        <ul class="nav-main">
+          <li><a class="catalog" href="catalog.html">Каталог товаров</a></li>
+          <li><a class="nav-main-item" href="#">Доставка</a></li>
+          <li><a class="nav-main-item" href="#">Гарантия</a></li>
+          <li><a class="nav-main-item" href="#">Контакты</a></li>
+        </ul>
       </div>
     </nav>
   </header>
@@ -191,12 +188,16 @@
         <a class="logo-footer" href="index.html">
           <img src="img/device_footer.svg" width="163" height="35" alt="Девайс">
         </a>
-        <section class="nav-user footer">
-          <a class="user-item ftr" href="#">Валентин Петухов</a>
-          <a class="user-item ftr" href="#">Выйти</a>
-          <a class="user-item ftr" href="#">Сравнить</a>
-          <a class="user-item ftr" href="#">Корзина</a>
-        </section>
+        <div>
+          <ul class="nav-user-footer">
+            <li>
+              <a class="user-item ftr user" href="#">Валентин Петухов</a>
+              <a class="user-item ftr" href="#">Выйти</a>
+            </li>
+            <li><a class="user-item ftr compare" href="#">Сравнить</a></li>
+            <li><a class="user-item ftr cart" href="#">Корзина</a></li>
+          </ul>
+        </div>
       </div>
       <div class="cont-info">
         <p class="adress">г. Москва, ул. Строителей, 15</p>
