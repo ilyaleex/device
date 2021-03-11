@@ -14,22 +14,41 @@
         <a class="logo" href="index.html">
           <img src="img/device_header.svg" width="163" height="35" alt="Девайс">
         </a>
-        <ul class="nav-user">
-          <li class="search">
+        <div class="nav-user">
+          <div class="search">
             <form action="https://echo.htmlacademy.ru" method="post">
               <input type="search" placeholder="Поиск по сайту">
               <button сlass="search-button" type="submit">НАЙТИ</button>
             </form>
-          </li>
-          <li>
-            <a class="user-item user" href="#">Валентин Петухов</a>
-            <a class="user-item logout" href="#">Выйти</a>
-          </li>
-          <li><a class="user-item compare" href="#">Сравнить</a></li>
-          <li><a class="user-item cart" href="#">Корзина</a></li>
-        </ul>
+          </div>
+          <section class="user-items authorized">
+            <div>
+              <a class="user-item user" href="#">Валентин Петухов</a>
+              <a class="logout" href="#">Выйти</a>
+            </div>
+            <div>
+              <a class="user-item compare" href="#">Сравнить</a>
+              <a class="user-item cart" href="#">Корзина</a>
+            </div>
+          </section>
+        </div>
         <ul class="nav-main">
-          <li><a class="catalog" href="catalog.html">Каталог товаров</a></li>
+          <li><a class="catalog" href="catalog.html">Каталог товаров</a>
+            <div class="dropdown-catalog-menu">
+              <ul>
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="catalog.html">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Фитнесс-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Квадрокоптер</a></li>
+              </ul>
+            </div>
+          </li>
           <li><a class="nav-main-item" href="#">Доставка</a></li>
           <li><a class="nav-main-item" href="#">Гарантия</a></li>
           <li><a class="nav-main-item" href="#">Контакты</a></li>
@@ -201,14 +220,16 @@
           <img src="img/device_footer.svg" width="163" height="35" alt="Девайс">
         </a>
         <div>
-          <ul class="nav-user-footer">
-            <li>
+          <section class="nav-user-footer">
+            <div>
               <a class="user-item ftr user" href="#">Валентин Петухов</a>
-              <a class="user-item ftr" href="#">Выйти</a>
-            </li>
-            <li><a class="user-item ftr compare" href="#">Сравнить</a></li>
-            <li><a class="user-item ftr cart" href="#">Корзина</a></li>
-          </ul>
+              <a class="logout ftr" href="#">Выйти</a>
+            </div>
+            <div>
+              <a class="user-item ftr compare" href="#">Сравнить</a>
+              <a class="user-item ftr cart" href="#">Корзина</a>
+            </div>
+          </section>
         </div>
       </div>
       <div class="cont-info">
