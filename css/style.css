@@ -179,7 +179,7 @@ ul {
 
 
 .logo {
-  margin-bottom: 14px;
+  margin-bottom: 44px;
 }
 
 
@@ -193,13 +193,16 @@ ul {
   gap: 40px;
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
+  margin-top: 9px;
+  height: 50px;
 }
 
 
 .user-items {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -211,6 +214,8 @@ ul {
 
 
 .search {
+  align-self: center;
+  width: 402px;
   position: relative;
   padding-left: 38px;
 }
@@ -227,6 +232,11 @@ ul {
   background-repeat: no-repeat;
 }
 
+
+input[type="search"]:focus+.search-button,
+input[type="search"]:focus+.search-button:after {
+  visibility: visible;
+}
 
 .user-item {
   position: relative;
@@ -375,28 +385,29 @@ input[type="search"]:hover::placeholder {
 }
 
 
+
+.search-button {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  bottom: -14px;
+  background: none;
+  font: inherit;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  padding: 15px 17px;
+}
+
+
 .search-button:after {
   visibility: hidden;
   content: "";
   position: absolute;
   width: 440px;
   height: 2px;
-  left: 0;
-  bottom: -14px;
+  right: 0;
+  bottom: -2px;
   background: var(--basic-black);
-}
-
-
-.search-button {
-  visibility: hidden;
-  position: absolute;
-  right: -237px;
-  bottom: -14px;
-  background: none font: inherit;
-  border: 2px solid #000000;
-  box-sizing: border-box;
-  width: 84px;
-  height: 50px;
 }
 
 
