@@ -390,12 +390,12 @@ input[type="search"]:hover::placeholder {
   visibility: hidden;
   position: absolute;
   right: 0;
-  bottom: -14px;
+  bottom: -15px;
   background: none;
   font: inherit;
   border: 2px solid #000000;
   box-sizing: border-box;
-  padding: 15px 17px;
+  padding: 13px 15px;
 }
 
 
