@@ -386,7 +386,7 @@ input[type="search"]:hover::placeholder {
 
 
 
-.search-button {
+.search-button { 
   visibility: hidden;
   position: absolute;
   right: 0;
