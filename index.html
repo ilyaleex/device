@@ -57,8 +57,8 @@
    <h1 class="visually-hidden">Главная страница магазина "Девайс"</h1>
     <section class="promoblock">
       <div class="container">
-        <article class="slider-item slide slide-current">
-          <img class="slider-img" src="img/selfie-sticks.png" width="384" height="486" alt="Селфи-палки">
+        <article class="slider-item slide-current">
+          <img class="slider-img-sticks" src="img/selfie-sticks.png" width="384" height="486" alt="Селфи-палки">
           <div class="slider-info">
             <h1 class="slider-head">Делай селфи,<br>как Бен Стиллер!</h1>
             <p class="slider desc">Самая длинная палка для селфи доступна в нашем магазине.<br>
@@ -80,8 +80,8 @@
             </dl>
           </div>
         </article>
-        <article class="slider-item slide">
-          <img class="slider-img" src="img/bracelet.png" width="345" height="483" alt="Фитнес-браслет">
+        <article class="slider-item">
+          <img class="slider-img-bracelet" src="img/bracelet.png" width="345" height="483" alt="Фитнес-браслет">
           <div class="slider-info">
             <h1 class="slider-head">Худеем<br>правильно!</h1>
             <p class="slider desc">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
@@ -95,8 +95,8 @@
             </dl>
           </div>
         </article>
-        <article class="slider-item slide">
-          <img class="slider-img" src="img/drone.png" width="526" height="334" alt="Квадрокоптер">
+        <article class="slider-item">
+          <img class="slider-img-drone" src="img/drone.png" width="526" height="334" alt="Квадрокоптер">
           <div class="slider-info">
             <h1 class="slider-head">Порхает как бабочка,<br>жалит как пчела!</h1>
             <p class="slider desc">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
@@ -117,9 +117,9 @@
         </article>
       </div>
       <div class="slider-controls">
-        <button class="current" type="button" aria-label="Первый слайд"></button>
-        <button type="button" aria-label="Второй слайд"></button>
-        <button type="button" aria-label="Третий слайд"></button>
+        <button class="slider-button current-slide-button" type="button" aria-label="Первый слайд"></button>
+        <button class="slider-button" type="button" aria-label="Второй слайд"></button>
+        <button class="slider-button" type="button" aria-label="Третий слайд"></button>
       </div>
     </section>
     <section class="container">
@@ -266,12 +266,12 @@
         <h3 class="contacts-title">Контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
           проверить работоспособность покупки. Всякое бывает.</p>
-        <img class="map" src="img/plug_map.png" width="560" height="222" alt="">
-        <div class="modal modal-map">
+        <img class="open-map" src="img/plug_map.png" width="560" height="222" alt="">
+        <div class="modal-map">
           <button type="button" class="close" aria-label="Закрыть"></button>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1283.3515186492439!2d37.52796555160026!3d55.686792379232905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1614293519263!5m2!1sru!2sru" width="960" height="572" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <a class="button" href="#">Напишите нам</a>
+        <a class="button write-us" href="#">Напишите нам</a>
       </div>
     </section>
   </main>
@@ -320,25 +320,27 @@
       </div>
     </div>
   </footer>
-  <section class="modal modal-feedback">
+  <section class="modal-feedback">
     <button type="button" class="close" aria-label="Закрыть"></button>
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="user-data">
         <p class="name">
           <label for="name" class="label-form">Ваше имя:</label>
-          <input id="name" type="text" placeholder="Имя Фамилия">
+          <input class="username" id="name" type="text" placeholder="Имя Фамилия">
         </p>
         <p class="mail">
           <label for="mail" class="label-form">Ваш e-mail:</label>
-          <input id="mail" type="email" placeholder="email@example.com">
+          <input class="user-email" id="mail" type="email" placeholder="email@example.com">
         </p>
       </div>
       <p class="letter">
         <label for="letter" class="label-form">Текст письма:</label>
-        <textarea id="letter" placeholder="В свободной форме"></textarea>
+        <textarea class="letter-text" id="letter" placeholder="В свободной форме"></textarea>
       </p>
       <button class="button submit" type="submit" href="#">Отправить</button>
     </form>
   </section>
+  <script src="js/write-us.js"></script>
+  <script src="js/map.js"></script>
 </body>
 </html>
