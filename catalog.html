@@ -15,10 +15,10 @@
           <img src="img/device_header.svg" width="163" height="35" alt="Девайс">
         </a>
         <div class="nav-user">
-            <form class="search" action="https://echo.htmlacademy.ru" method="post">
-              <input type="search" placeholder="Поиск по сайту">
-              <button class="search-button" type="submit">НАЙТИ</button>
-            </form>
+          <form class="search" action="https://echo.htmlacademy.ru" method="post">
+            <input type="search" placeholder="Поиск по сайту">
+            <button class="search-button" type="submit">НАЙТИ</button>
+          </form>
           <section class="user-items authorized">
             <div>
               <a class="user-item user" href="#">Валентин Петухов</a>
@@ -26,6 +26,8 @@
             </div>
             <div>
               <a class="user-item compare" href="#">Сравнить</a>
+            </div>
+            <div>
               <a class="user-item cart" href="#">Корзина</a>
             </div>
           </section>
@@ -78,8 +80,8 @@
             </li>
           </ul>
           <ul class="triangle-controls">
-            <li><a href="#" class="up-triangle"></a></li>
-            <li><a href="#" class="down-triangle"></a></li>
+            <li><a href="#" class="up-triangle" aria-label="Кнопка сортировки по возрастанию"></a></li>
+            <li><a href="#" class="down-triangle" aria-label="Кнопка сортировки по убыванию"></a></li>
           </ul>
         </div>
       </header>
@@ -94,15 +96,15 @@
                     <div class="scale">
                       <div class="bar" style="width: 55%; margin-left: 0%"></div>
                     </div>
-                    <div class="toggle toggle-min" tabindex="0" style="left: 0%"></div>
-                    <div class="toggle toggle-max" tabindex="0" style="left: 55%"></div>
+                    <div class="toggle toggle-min" tabindex="0" style="left: 0%" aria-label="Ползунок минимальной цены"></div>
+                    <div class="toggle toggle-max" tabindex="0" style="left: 55%" aria-label="Ползунок максимальноцй цены"></div>
                     <div class="price-controls">
-                       <label class="min-price">
-              от <input type="number" name="min-price" value="0">
-            </label>
-            <label class="max-price">
-              до <input type="number" name="max-price" value="5000">
-            </label>
+                      <label class="min-price">
+                        от <input class="toggle-price" type="number" name="min-price" value="0">
+                      </label>
+                      <label class="max-price">
+                        до <input class="toggle-price" type="number" name="max-price" value="5000">
+                      </label>
                     </div>
                   </div>
                 </div>
@@ -231,6 +233,8 @@
             </div>
             <div>
               <a class="user-item ftr compare" href="#">Сравнить</a>
+            </div>
+            <div>
               <a class="user-item ftr cart" href="#">Корзина</a>
             </div>
           </section>

@@ -124,9 +124,9 @@ ul {
   position: absolute;
   display: flex;
   box-sizing: border-box;
-  left: 180px;
   width: 1160px;
-  padding: 30px 60px 18px 60px;
+  left: -60px;
+  padding: 30px 60px;
   background: var(--special-yellow);
   font-family: "Open Sans", Arial, sans-serif;
   font-style: normal;
@@ -150,7 +150,7 @@ ul {
 
 
 .dropdown-catalog-menu li {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 
@@ -175,7 +175,7 @@ ul {
 
 .nav-wrapper {
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 57px 0 60px;
 }
 
 
@@ -239,8 +239,10 @@ input[type="search"]:focus+.search-button:after {
   visibility: visible;
 }
 
+
 .user-item {
   position: relative;
+  display: inline-block;
   padding-left: 24px;
 }
 
@@ -283,12 +285,18 @@ input[type="search"]:focus+.search-button:after {
 
 
 .nav-main {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   padding: 0;
   margin: 0;
   padding-bottom: 50px;
+}
+
+
+.landing-page {
+  padding-bottom: 30px;
 }
 
 
@@ -328,7 +336,7 @@ input[type="search"]:focus+.search-button:after {
 
 .catalog {
   position: relative;
-  padding-right: 28px;
+  padding-right: 30px;
 }
 
 
@@ -713,7 +721,7 @@ input[type="search"]:hover::placeholder {
 
 footer {
   background: var(--footer);
-  padding: 46px 0 65px 0;
+  padding: 44px 0 60px 0;
 }
 
 
@@ -926,8 +934,8 @@ label {
 
 
 .slider-head {
-  margin-bottom: 30px;
-  margin-top: 82px;
+  margin-bottom: 25px;
+  margin-top: 100px;
 }
 
 
@@ -937,13 +945,13 @@ label {
   width: 100px;
   height: 7px;
   background: var(--basic-white);
-  top: 20px;
+  top: 40px;
 }
 
 
 .slider-item .button {
   width: 220px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 
@@ -952,7 +960,7 @@ label {
   display: flex;
   width: 72px;
   justify-content: space-between;
-  bottom: 150px;
+  bottom: 132px;
   right: 88px;
 }
 
@@ -991,10 +999,10 @@ label {
 
 .slider-item::before {
   position: absolute;
-  right: 48px;
-  top: -28px;
+  right: 49px;
+  top: -10px;
   counter-increment: slider;
-  content: "0" counter(slider);
+  content: "0"counter(slider);
   color: var(--basic-white);
   font-size: 179px;
   line-height: 219px;
@@ -1007,30 +1015,15 @@ label {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  background: linear-gradient(to bottom, #F7E296 118px, transparent 118px);
-  margin-bottom: 96px;
+  background: linear-gradient(to bottom, #F7E296 135px, transparent 135px);
+  margin-bottom: 116px;
   display: none;
 }
 
 
-.slider-img-sticks {
-  position: absolute;
-  left: 89px;
-  top: -15px;
-}
-
-
-.slider-img-bracelet {
-  position: absolute;
-  left: 116px;
-  top: 12px;
-}
-
-
-.slider-img-drone {
-  position: absolute;
-  left: 30px;
-  top: 70px;
+.slider-img {
+  align-self: center;
+  justify-self: center;
 }
 
 
@@ -1054,7 +1047,7 @@ label {
 .footer-nav {
   display: grid;
   grid-template-rows: 20px 1fr;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 
@@ -1146,7 +1139,7 @@ label {
 .cont-info {
   display: grid;
   grid-template-columns: 333px 1fr 333px;
-  margin-bottom: 68px;
+  margin-bottom: 65px;
 }
 
 
@@ -1170,7 +1163,7 @@ label {
 
 
 .nav-main-item-ftr:not(:last-child) {
-  margin-right: 36px;
+  margin-right: 33px;
 }
 
 
@@ -1388,22 +1381,18 @@ label {
 
 .features {
   font-weight: 300;
-  display: grid;
   display: flex;
-  column-gap: 64px;
-  grid-template-areas:
-    "feature-value"
-    "feature-name";
+  margin: 0;
 }
 
 
 .feature-value {
-  grid-row: 1 / 2;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.1em;
+  margin-right: 62px;
 }
 
 
@@ -1665,7 +1654,7 @@ label {
   content: "";
   position: absolute;
   top: 14px;
-  left: -30px;
+  left: -31px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -1694,6 +1683,9 @@ label {
 
 
 .filter-item-heading {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
   position: relative;
   padding-top: 14px;
   margin-bottom: 15px;
@@ -1754,9 +1746,10 @@ label {
 .about-title,
 .contacts-title {
   position: relative;
-  padding-top: 68px;
+  padding-top: 58px;
   letter-spacing: 0.2em;
   margin-top: 0;
+  margin-bottom: 39px;
 }
 
 
@@ -1776,7 +1769,7 @@ label {
   display: grid;
   grid-template-columns: 473px auto;
   gap: 127px;
-  margin-bottom: 86px;
+  margin-bottom: 77px;
 }
 
 
@@ -1799,7 +1792,7 @@ label {
 
 
 .about-us .button {
-  margin-top: 64px;
+  margin-top: 46px;
 }
 
 
@@ -1808,13 +1801,14 @@ label {
 }
 
 .contacts .button {
-  margin-top: 84px;
+  margin-top: 68px;
 }
 
 
 .delivery-partners {
   padding: 0;
   line-height: 28px;
+  font-size: 16px;
 }
 
 
@@ -2066,20 +2060,22 @@ input[type="email"]:focus {
 }
 
 
-input[type="number"] {
-  font-family: "Gilroy";
+.toggle-price {
+  font-family: "Gilroy", Arial, sans-serif;
+  ;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
-   width: 65px;
+  width: 65px;
   background: none;
   border: none;
 }
 
+
 .max-price,
 .min-price {
-  font-family: "Gilroy";
+  font-family: "Gilroy", Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
