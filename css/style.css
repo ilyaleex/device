@@ -202,6 +202,7 @@ ul {
 
 .user-items {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin: 0;
@@ -973,6 +974,7 @@ label {
   background-color: transparent;
   border: 1px solid #000000;
   border-radius: 50%;
+  box-sizing: border-box;
   cursor: pointer;
 }
 
@@ -980,33 +982,16 @@ label {
 .current-slide-button:before {
   content: "";
   position: absolute;
-  width: 4px;
-  height: 4px;
+  width: 6px;
+  height: 6px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent;
   border: 1px solid #000000;
   border-radius: 50%;
+  box-sizing: border-box;
   cursor: pointer;
-}
-
-
-.slider-item {
-  counter-reset: slider;
-}
-
-
-.slider-item::before {
-  position: absolute;
-  right: 49px;
-  top: -10px;
-  counter-increment: slider;
-  content: "0"counter(slider);
-  color: var(--basic-white);
-  font-size: 179px;
-  line-height: 219px;
-  text-transform: uppercase;
 }
 
 
@@ -1019,6 +1004,43 @@ label {
   margin-bottom: 116px;
   display: none;
 }
+
+
+.slider-item::before {
+  position: absolute;
+  right: 49px;
+  top: -10px;
+  content: "01";
+  color: var(--basic-white);
+  font-size: 179px;
+  line-height: 219px;
+  text-transform: uppercase;
+}
+
+
+.slider-item:nth-child(2)::before {
+  position: absolute;
+  right: 49px;
+  top: -10px;
+  content: "02";
+  color: var(--basic-white);
+  font-size: 179px;
+  line-height: 219px;
+  text-transform: uppercase;
+}
+
+
+.slider-item:nth-child(3)::before {
+  position: absolute;
+  right: 49px;
+  top: -10px;
+  content: "03";
+  color: var(--basic-white);
+  font-size: 179px;
+  line-height: 219px;
+  text-transform: uppercase;
+}
+
 
 
 .slider-img {
@@ -1066,11 +1088,11 @@ label {
 
 
 .nav-user-footer {
+  display: flex;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
-  display: flex;
   padding: 0;
   margin: 0;
 }
@@ -1382,6 +1404,7 @@ label {
 .features {
   font-weight: 300;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
 }
 
