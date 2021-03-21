@@ -3,6 +3,7 @@
 const openMap = document.querySelector('.open-map');
 const map = document.querySelector('.modal-map');
 const closeMap = map.querySelector('.close');
+const adressLInk = document.querySelector('.adess-link');
 
 
 openMap.addEventListener("click", function (evt) {
@@ -24,4 +25,9 @@ window.addEventListener("keydown", function (evt) {
       map.classList.remove("modal-show");
     }
   }
+});
+
+
+adressLInk.addEventListener("click", function (evt) {
+  evt.preventDefault();
 });
