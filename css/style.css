@@ -738,7 +738,7 @@ footer {
 
 
 .nav-main-item-footer a,
-.adress,
+.address,
 .phone {
   color: var(--basic-white);
 }
@@ -774,7 +774,7 @@ h3 {
 
 
 .description,
-.adress,
+.address,
 .phone {
   font-size: 15px;
   font-family: "Open Sans", Arial, sans-serif;
@@ -1170,14 +1170,14 @@ label {
 }
 
 
-.cont-info {
+.contact-info {
   display: grid;
   grid-template-columns: 333px 1fr 333px;
   margin-bottom: 65px;
 }
 
 
-.adress {
+.address {
   padding: 0;
   margin: 0;
 }
@@ -1420,8 +1420,13 @@ label {
   margin: 0;
 }
 
+.feature-item {
+  display: grid;
+}
+
 
 .feature-value {
+  order: -1;
   margin: 0;
   margin-bottom: 12px;
   font-size: 36px;
@@ -2054,6 +2059,8 @@ label {
 }
 
 
+
+
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
@@ -2116,4 +2123,9 @@ label {
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
+}
+
+
+iframe {
+   visibility: visible;
 }

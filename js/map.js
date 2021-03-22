@@ -3,10 +3,10 @@
 const openMap = document.querySelector('.open-map');
 const map = document.querySelector('.modal-map');
 const closeMap = map.querySelector('.close');
-const adressLInk = document.querySelector('.adess-link');
+const addressLink = document.querySelector('.address-link');
 
 
-openMap.addEventListener(click, function (evt) {
+openMap.addEventListener('click', function (evt) {
   evt.preventDefault();
   map.classList.add('modal-show');
 });
@@ -28,6 +28,6 @@ window.addEventListener('keydown', function (evt) {
 });
 
 
-adressLInk.addEventListener('click', function (evt) {
+addressLink.addEventListener('click', function (evt) {
   evt.preventDefault();
 });
