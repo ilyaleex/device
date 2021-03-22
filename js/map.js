@@ -6,28 +6,28 @@ const closeMap = map.querySelector('.close');
 const adressLInk = document.querySelector('.adess-link');
 
 
-openMap.addEventListener("click", function (evt) {
+openMap.addEventListener(click, function (evt) {
   evt.preventDefault();
-  map.classList.add("modal-show");
+  map.classList.add('modal-show');
 });
 
 
-closeMap.addEventListener("click", function (evt) {
+closeMap.addEventListener('click', function (evt) {
   evt.preventDefault();
-  map.classList.remove("modal-show");
+  map.classList.remove('modal-show');
 });
 
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (map.classList.contains("modal-show")) {
+    if (map.classList.contains('modal-show')) {
       evt.preventDefault();
-      map.classList.remove("modal-show");
+      map.classList.remove('modal-show');
     }
   }
 });
 
 
-adressLInk.addEventListener("click", function (evt) {
+adressLInk.addEventListener('click', function (evt) {
   evt.preventDefault();
 });
